@@ -28,6 +28,7 @@ const CreatePage = () => {
           onClick={async () => {
             await addOutfit({ title, products: Array.from(selected) });
             setSelected(new Set());
+            setTitle("");
           }}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
